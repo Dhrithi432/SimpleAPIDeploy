@@ -4,12 +4,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequestMapping("ust/simple/")
 @RestController
-@RequestMapping("simple/v1/")
 public class SimpleController {
 	
-	 @GetMapping("/hello")
-	    public String hello() {
-	        return "Jai Hind";
-	    }
+	@GetMapping("/hello")
+	public String hello() {
+		return "Jai Hind";
+	}
 }
